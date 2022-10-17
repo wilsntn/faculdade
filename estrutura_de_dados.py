@@ -2,11 +2,11 @@ import time
 import os
 
 def mostrarOpcoes():
-    print("1 - Se você quiser adicionar um item da lista")
-    print("2 - Se você quiser excluir o ultimo item da lista")
-    print("3 - Se você quiser saber o tamanho da lista")
-    print("4 - Se você quiser exibir os itens da lista")
-    print("5 - Se você quiser ver o último item da lista")
+    print("1 - Se você quiser adicionar um item da Pilha")
+    print("2 - Se você quiser excluir o ultimo item da Pilha")
+    print("3 - Se você quiser saber o tamanho da Pilha")
+    print("4 - Se você quiser exibir os itens da Pilha")
+    print("5 - Se você quiser ver o último item da Pilha")
     print("6 - Se você quiser encerrar o programa")
 #função para exibir o menu de opções dentro do while
 
@@ -40,7 +40,7 @@ while verificadorDeResposta != 6:
         print("programa encerrado")
     
     time.sleep(3) #para dar um tempo de visualização dos dados exibidos em cada lista antes de reiniciar o loop
-    os.system('cls')
+    os.system('clear')
         
     
     
