@@ -25,13 +25,20 @@ while verificadorDeResposta != 6:
 
         pilha.append(valorTemporario) #comando principal para adicionar um item ao final da pilha
     elif verificadorDeResposta == 2:
-        print("O item removido foi: ", pilha.pop()) # comando principal para remover o ultimo item da lista
+        if len(pilha) > 1:
+            print("O item removido foi: ", pilha.pop())
+        else: 
+            print("A lista esta vazia")
+         # comando principal para remover o ultimo item da lista
     elif verificadorDeResposta == 3:
         print("O tamanho da lista é: ", len(pilha)) # comando para exibir o tamanho da pilha (números de elementos nela)
     elif verificadorDeResposta == 4:
-        print("Os itens da lista são: ") # loop para exibir todos os itens presentes na pilha
-        for i in pilha:
-            print(i)
+        if len(pilha) > 1:
+            print("Os itens da lista são: ") # loop para exibir todos os itens presentes na pilha
+            for i in pilha:
+                print(i)
+        else:
+            print("A lista esta vazia")
     elif verificadorDeResposta == 5:
         ultimoElemento = len(pilha) - 1
         print("O ultimo item da lista é: ", pilha[ultimoElemento]) # para exibir o último elemento da pilha
